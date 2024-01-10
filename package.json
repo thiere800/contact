@@ -1,0 +1,31 @@
+{
+  "name": "sn.esp.mglsi.contacts",
+  "displayName": "Contacts",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "cordova": {
+    "platforms": [
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-contacts": {},
+      "cordova-plugin-console": {},
+      "cordova-sqlite-storage": {}
+    }
+  },
+  "devDependencies": {
+    "cordova-browser": "^7.0.0",
+    "cordova-plugin-console": "^1.1.0",
+    "cordova-plugin-contacts": "^3.0.1",
+    "cordova-sqlite-storage": "^6.1.0"
+  }
+}

@@ -1,0 +1,131 @@
+/* index.css */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#contactList li {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    position: relative;
+}
+
+#contactList li img {
+    float: left;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+#contactList li h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+#contactList li p {
+    margin: 5px 0;
+    color: #666;
+}
+
+#contactList li .actions {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+/* Hide the actions initially */
+#contactList li .actions button {
+    display: none;
+}
+
+/* Swipe left CSS animations and visibility */
+#contactList li.swipeleft .actions button {
+    display: block;
+    animation: swipeleft 0.3s ease;
+}
+
+@keyframes swipeleft {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+/* Button styling */
+button {
+    background-color: #4285F4;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.delete {
+    background-color: #f44336;
+}
+
+button.update {
+    background-color: #4CAF50;
+}
+
+/* Popup styling */
+div[data-role="popup"] {
+    padding: 20px;
+    text-align: center;
+}
+
+div[data-role="popup"] h3 {
+    margin-top: 0;
+}
+
+div[data-role="popup"] input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+div[data-role="popup"] button {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Footer styling */
+div[data-role="footer"] {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.contact-actions {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.icon-edit:before {
+    content: '\f044'; /* Font Awesome pencil icon */
+    font-family: 'Font Awesome 5 Free';
+    padding: 5px;
+    font-size: 16px;
+    color: #4CAF50; /* Or any color you prefer */
+    cursor: pointer;
+}
+
+.icon-delete:before {
+    content: '\f2ed'; /* Font Awesome trash icon */
+    font-family: 'Font Awesome 5 Free';
+    padding: 5px;
+    font-size: 16px;
+    color: #f44336; /* Or any color you prefer */
+    cursor: pointer;
+}
+
+.avatar-image {
+    border-radius: 50%;
+    padding: 5px; /* Adjust as needed */
+    /* Other styling properties */
+}
